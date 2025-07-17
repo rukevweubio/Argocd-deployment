@@ -2,10 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bitcoin-app
+  namespace: dev  
   labels:
     app: bitcoin-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: bitcoin-app
@@ -16,6 +17,6 @@ spec:
     spec:
       containers:
       - name: bitcoin-app
-        image: argocddockerimage.azurecr.io/bitcoin-app-design:latest
+        image:  rukevweubio/bitcoin-app-design:latest
         ports:
         - containerPort: 80
