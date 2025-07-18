@@ -56,6 +56,11 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 ```
 ## GKS CLUSTER
 ![GKS CLUSTER](https://github.com/rukevweubio/Argocd-deployment/blob/main/argocd-deployment-mysql-php/screenshoots/Screenshot%20(1558).png)
+##Argocd
+![ARGOCD CD UI](https://github.com/rukevweubio/Argocd-deployment/blob/main/argocd-deployment-mysql-php/screenshoots/Screenshot%20(1569).png)
+
+![ARGOCD CD UI](https://github.com/rukevweubio/Argocd-deployment/blob/main/argocd-deployment-mysql-php/screenshoots/Screenshot%20(1570).png)
+
 
 
 
