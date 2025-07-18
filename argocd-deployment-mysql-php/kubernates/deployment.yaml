@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: job-board-app
-        image: your_docker_username/job-board-app:latest # IMPORTANT: Replace with your Docker Hub username and image name
+        image: rukevweubio/jobportal:latest # IMPORTANT: Replace with your Docker Hub username and image name
         ports:
         - containerPort: 80
         env:
