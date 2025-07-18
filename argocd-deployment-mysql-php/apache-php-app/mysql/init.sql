@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS job_board;
+
+USE job_board;
+
+CREATE TABLE IF NOT EXISTS jobs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    company VARCHAR(255) NOT NULL,
+    location VARCHAR(255),
+    description TEXT NOT NULL,
+    salary VARCHAR(100),
+    email VARCHAR(255) NOT NULL,
+    posted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

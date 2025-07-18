@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: job-board-app-deployment
+  labels:
+    app: job-board-app
+spec:
+  replicas: 2 # You can adjust the number of replicas
+  selector:
+    matchLabels:
+      app: job-board-app
+  template:
+    metadata:
+      labels:
+        app: job-board-app
+    spec:
+      containers:
+      - name: job-board-app
+        image: your_docker_username/job-board-app:latest # IMPORTANT: Replace with your Docker Hub username and image name
+        ports:
+        - containerPort: 80
+        env:
+        - name: DB_HOST
+          value: "db"
+        - name: DB_USER
+          value: "root"
+        - name: DB_PASSWORD
+          value: "root" # IMPORTANT: Use the same password as in mysql-deployment.yaml
