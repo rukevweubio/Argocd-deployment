@@ -1,5 +1,5 @@
 <?php
-$servername = "db"; // Kubernetes service name for MySQL
+$servername = "mysql-service"; // Kubernetes service name for MySQL
 $username = "root";           // Your MySQL username
 $password = "root"; // IMPORTANT: Change this!
 $dbname = "job_board";
