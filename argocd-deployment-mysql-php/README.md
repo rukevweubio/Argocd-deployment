@@ -16,3 +16,35 @@ This project automates the deployment of a PHP and MySQL-based web application u
 - Git & GitHub – Version control and ArgoCD source repo
 - Let me know when you're ready for the next one:
 ## Data Arch
+![data flow daigram](https://github.com/rukevweubio/Argocd-deployment/blob/main/argocd-deployment-mysql-php/screenshoots/argoce3.jpg)
+
+##  Prerequisites
+Before getting started, ensure you have the following tools installed:
+- Docker : to build teh docker image
+- kubectl: to interact with the GKS Cluster
+- Google Cloud CLI (gcloud)
+- ArgoCD CLI
+- Git
+
+## setup & Installation
+Clone the Repository:
+```
+git clone https://github.com/rukevweubio/Argocd-deployment.git
+cd Argocd-deployment
+```
+Build Docker Images
+```
+docker build -t rukevweubio/php-app:latest ./php-app
+docker build -t rukevweubio/mysql-db:latest ./mysql
+docker push -t rukevweubio/php-app:latest ./php-app
+docker push -t rukevweubio/mysql-db:latest ./mysql
+
+```
+## Docker image
+![data flow daigram](https://github.com/rukevweubio/Argocd-deployment/blob/main/argocd-deployment-mysql-php/screenshoots(1555).png)
+
+
+
+
+
+
