@@ -54,7 +54,8 @@ gcloud container clusters get-credentials job-board-cluster --zone=us-central1-a
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
-
+## GKS CLUSTER
+![GKS CLUSTER](https://github.com/rukevweubio/Argocd-deployment/blob/main/argocd-deployment-mysql-php/screenshoots/Screenshot%20(1558).png)
 
 
 
