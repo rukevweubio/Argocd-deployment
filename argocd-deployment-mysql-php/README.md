@@ -41,8 +41,19 @@ docker push -t rukevweubio/mysql-db:latest ./mysql
 
 ```
 ## Docker image
-![data flow daigram](https://github.com/rukevweubio/Argocd-deployment/blob/main/argocd-deployment-mysql-php/screenshoots(1555).png)
+![data flow daigram](https://github.com/rukevweubio/Argocd-deployment/blob/main/argocd-deployment-mysql-php/screenshoots/Screenshot%20(1555).png)
 
+### GKE & ArgoCD Deployment
+- Create GKE Cluster
+```
+gcloud container clusters create job-board-cluster --num-nodes=2 --zone=us-central1-a
+gcloud container clusters get-credentials job-board-cluster --zone=us-central1-a
+```
+### Install ArgoCD on the Cluster
+```
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
 
 
 
