@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: mysql:8.0 # You can choose a specific version
+        image: mysql:latest # You can choose a specific version
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: "root" # IMPORTANT: Use the same strong password as in db.php
